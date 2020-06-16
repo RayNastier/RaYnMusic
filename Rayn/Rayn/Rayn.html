@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="Rayn.css">
+    <title>RaYn Music</title>
+</head>
+<body>
+    <div class="portofolio">
+        <header>
+            <nav>
+                <div class="nav">
+                    <div class="logo">
+                        <a href="Rayn.html"><img src="./img/logo.png" alt=""></a>
+                        <a href="Rayn.html"><h3>RaYn <span>Music</span></h3></a>
+                    </div>
+                    <div class="more">
+                        <ul id="ul">
+                            <a href="Library.html" target="_blank"><li>Library</li></a>
+                            <a href="#"><li>PlayLists</li></a>
+                        </ul>
+                        <button id="button">Sign Up</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="midle">
+                <div class="buble">
+                    <img onclick="colorOne()" id="img" src="./img/buble.png" alt="buble">
+                </div>
+                <div class="woman">
+                    <img src="./img/woman.png" alt="">
+                </div>
+                <h2 id="live">Live For The</h2>
+                <h2 id="music">Music</h2>
+            </div>
+        </main>
+    </div>
+    <div class="last">
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>About Us</h2>
+                    <div class="content">
+                        <p>Welcome to our Algerian Music website, here you can find the best Playlists to listen for when on a walk, at the gym, working or even studying.
+                            Happy, anxtious, sad or even angry, we can put between your hands more than 5 thousand playlist contains more than 25 million song. Just to boost your mood.
+                            And Guess! <p style="font-weight: bold; color: #f12020;">It's all free.</p>
+                        </p>
+                        <div class="social">
+                            <a onclick="window.open('https:/facebook.com/SaMy16MhD','newwindow', 'width=600,height=700');"><span class="fab fa-facebook-f"></span></a>
+                            <a onclick="window.open('https:/twitter.com/MhDSaMy','newwindow', 'width=600,height=700');"><span class="fab fa-twitter"></span></a>
+                            <a onclick="window.open('https:/instagram.com/x._sa.my_.x/','newwindow', 'width=600,height=700');"><span class="fab fa-instagram"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <a onclick="window.open('https:/goo.gl/maps/LESS2WQnz57L7We48','newwindow', 'width=500,height=500');"><i class="fas fa-map-marker-alt"></i></a>
+                            <span class="text">Draria, Algiers, Algeria</span>
+                        </div>
+                        <div class="phone">
+                            <a href="tel:213-553-377-887"><i class="fas fa-phone-alt"></i></a>
+                            <span class="text">+213-553377887</span>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:OffRaynMusic@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <span class="text">OffRaynMusic@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right box">
+                    <h2>Contact Us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email*</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message*</div>
+                                <textarea cols="30" rows="2" required></textarea>
+                            </div>
+                            <div class="bbtn">
+                                <button type="submit" id="send">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Created By <a href="#">SaMy Mehdid</a> | </span>
+                    <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function colorOne(){
+    document.getElementById('img').src="./img/buble1.png";
+    document.getElementById('button').style.background ="linear-gradient(-45deg, #00ffff, #ff0000)";
+    document.getElementById('music').style.color ="#00ffff";
+    document.getElementById('img').onclick = "colorTwo()";
+    document.getElementById('img').setAttribute('onclick', 'colorTwo()');
+        }
+        function colorTwo(){
+    document.getElementById('img').src="./img/buble2.png";
+    document.getElementById('button').style.background ="linear-gradient(-45deg, #ffff00, #ff0000)";
+    document.getElementById('music').style.color ="#ffff00";
+    document.getElementById('img').onclick = "colorThree()";
+    document.getElementById('img').setAttribute('onclick', 'colorThree()');
+        }
+        function colorThree(){
+    document.getElementById('img').src="./img/buble3.png";
+    document.getElementById('button').style.background ="linear-gradient(-45deg, #08aeea, #2af598)";
+    document.getElementById('music').style.color ="#08aeea";
+    document.getElementById('img').onclick = "colorFour()";
+    document.getElementById('img').setAttribute('onclick', 'colorFour()');
+        }
+        function colorFour(){
+    document.getElementById('img').src="./img/buble4.png";
+    document.getElementById('button').style.background ="linear-gradient(-45deg, #ffcc70, #c850c0, #4158d0)";
+    document.getElementById('music').style.color ="#ffcc70";
+    document.getElementById('img').onclick = "colorFive()";
+    document.getElementById('img').setAttribute('onclick', 'colorFive()');
+        }
+        function colorFive(){
+    document.getElementById('img').src="./img/buble.png";
+    document.getElementById('button').style.background ="linear-gradient(-45deg, #90046d, #0000ff)";
+    document.getElementById('music').style.color ="#90046d";
+    document.getElementById('img').onclick = "colorOne()";
+    document.getElementById('img').setAttribute('onclick', 'colorOne()');
+        }
+    </script>
+</body>
+</html>

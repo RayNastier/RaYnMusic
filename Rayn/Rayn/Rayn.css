@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Poplight;
+    src: url('./fonts/Poppins-Light.ttf');
+}
+@font-face{
+    font-family: PopRegular;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+.portofolio{
+    background: radial-gradient(rgba(224,224,224), rgba(184,184,184));
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.more ul{
+    font-weight: bolder;
+    font-family: PopRegular;
+    list-style: none;
+    display: flex;
+    color: #2f2f2f;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.more ul li{
+    padding-right: 10px;
+}
+.more ul li:hover{
+    color: rgb(143, 4, 108);
+}
+.more button{
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(-45deg, rgb(143, 4, 108), rgba(0,0,255));
+    border-radius: 20px 0 20px 0;
+}
+.more button:hover{
+    border-radius: 0 20px 0 20px;
+}
+.more{
+    display: flex;
+}
+.more a{
+    text-decoration: none;
+    color: #2f2f2f;
+}
+.logo{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.logo img{
+    height: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.logo h3{
+    color: #2f2f2f;
+    padding-top: 7px;
+    padding-left: 10px;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo span:hover{
+    color: rgb(143, 4, 108);
+}
+nav .nav{
+    padding-top: 15px;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: #d9d9d9;
+}
+.main-content{
+    display: flex;
+}
+.main-content h2{
+    border: 1px solid #111;
+    width: 140px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.main-content h2:hover{
+    background-color: #f12020;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+.left .content p{
+    text-align: justify;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 20px;
+    justify-content: center;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    color:white;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.center .content .fas:hover{
+    background: #f12020;
+    cursor: pointer;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .bbtn{
+    margin-top: 10px;
+}
+.right form .bbtn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    color: white;
+    font-size: 1.0625rem;
+    cursor: pointer;
+    outline: none;
+    transition: all ease 0.5s;
+}
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
+.buble{
+    height: 300px;
+}
+.buble img{
+    cursor: pointer;
+    z-index: 1;
+    width: 220px;
+    position: relative;
+    top: 17px;
+    left: 512px;
+}
+.woman{
+    height: 213px;
+}
+.woman img{
+    z-index: 2;
+    width: 150px;
+    position: relative;
+    top: -150px;
+    left: 550px;
+}
+#live{
+    z-index: 3;
+    font-size: 40px;
+    width: 300px;
+    color: #2f2f2f;
+    position: relative;
+    top: -250px;
+    left: 300px;
+}
+#music{
+    font-size: 50px;
+    width: 200px;
+    color: rgb(143, 4, 108);
+    position: relative;
+    top: -250px;
+    left: 685px;
+}
+.midle{
+    height: 513px;
+}
+@media screen and (max-width: 1024px){
+    .buble img{
+        left:250px;
+    }
+    .woman img{
+        left:300px;
+    }
+    #live{
+        font-size: 30px;
+        left: 110px;
+        width: 250px;
+    }
+    #music{
+        font-size: 40px;
+        left:440px;
+        width:150px;
+    }
+}
+@media screen and (max-width: 600px){
+    .buble img{
+        left:200px;
+    }
+    .woman img{
+        left:250px;
+    }
+    #live{
+        font-size: 25px;
+        left: 90px;
+        width: 200px;
+    }
+    #music{
+        font-size: 33px;
+        left:390px;
+        width:130px;
+    }
+}
+@media screen and (max-width: 550px){
+    .buble img{
+        left:150px;
+    }
+    .woman img{
+        left:200px;
+    }
+    #live{
+        font-size: 20px;
+        left: 70px;
+        width: 150px;
+    }
+    #music{
+        font-size: 27px;
+        left:340px;
+        width:125px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .buble img{
+        left:100px;
+    }
+    .woman img{
+        left:150px;
+    }
+    #live{
+        font-size: 20px;
+        left: 30px;
+    }
+    #music{
+        font-size: 27px;
+        left:290px;
+        width:120px;
+    }
+    .logo span{
+        color: rgb(143, 4, 108);
+    }
+    .more button{
+        margin-right: 5px;
+        padding-left:  0;
+        padding-right: 0;
+        font-size: small;
+        width: 50px;
+    }
+    .more ul{
+        font-size: 15px;
+        padding-right: 3px;
+    }
+    .logo h3{
+        display: inline;
+    }
+}
+@media screen and (max-width: 375px){
+    .buble img{
+        width: 150px;
+        top: -30px;
+        left:120px
+    }
+    .woman img{
+        width:100px;
+        top:-190px;
+        left:145px;
+    }
+    #live{
+        font-size: 17px;
+        top:-270px;
+        left: 30px;
+        width: 120px;
+    }
+    #music{
+        font-size: 23px;
+        top:-270px;
+        left:235px;
+        width:80px;
+    }
+    .woman{
+        height: 150px;
+    }
+    .midle{
+        height:353px;
+    }
+    .logo span{
+        color: rgb(143, 4, 108);
+        padding-left: 20px;
+    }
+    .more button{
+        margin-right: 5px;
+        padding-left:  0;
+        padding-right: 0;
+        font-size: small;
+        width: 50px;
+    }
+    .more ul{
+        font-size: 15px;
+        padding-right: 3px;
+    }
+}
+@media screen and (max-width: 360px){
+    .buble img{
+        width: 150px;
+        top: -30px;
+        left:110px
+    }
+    .woman img{
+        width:100px;
+        top:-190px;
+        left:135px;
+    }
+    #live{
+        font-size: 17px;
+        top:-270px;
+        left: 20px;
+        width: 120px;
+    }
+    #music{
+        font-size: 23px;
+        top:-270px;
+        left:225px;
+        width:80px;
+    }
+    .woman{
+        height: 150px;
+    }
+    .midle{
+        height:353px;
+    }
+    .logo span{
+        color: rgb(143, 4, 108);
+        padding-left: 15px;
+    }
+    .more button{
+        margin-right: 5px;
+        padding-left:  0;
+        padding-right: 0;
+        font-size: small;
+        width: 50px;
+    }
+    .more ul{
+        font-size: 15px;
+        padding-right: 3px;
+    }
+}
